@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    body {
+      background: url(img/back.png) no-repeat center center fixed;
+      -webkit-background-size: cover; /* For WebKit*/
+      -moz-background-size: cover;    /* Mozilla*/
+      -o-background-size: cover;      /* Opera*/
+      background-size: cover;         /* Generic*/
+    }
+    footer {
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%;
+
+    }
+    #wrap-login{
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+    .form-group label{
+      font-size: 20px;
+
+    }
+      .radijo{
+          padding-left: 5px;
+          color: white;
+      }
+     
+
+  </style>
+
+  <script>
+    $( function() {
+      $( "#inputBirthday" ).datepicker();
+    } );
+  </script>
+</head>
+<body>
+
+  <!-- Page Container -->
+  <div class="containter" id="wrap-login">
+
+
+
+    <div class="col-lg-8">
+     <div class="">
+       <form class="form-horizontal" id="loginForm" method="post" action="">
+
+         <br>
+         <div class="form-group">
+           <label for="inputBirthday" class="col-lg-3 control label">Birthday</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="inputBirthday" placeholder="Your birthday">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="inputPassword" class="col-lg-3 control label">Active status</label>
+           <div class="col-lg-6 radijo" >
+             <input class="form-check-input " type="radio" name="status" id="active" value="active" checked>Active
+            <input class="form-check-input " type="radio" name="status" id="alumni" value="alumni">Alumni
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="inputYearOfStudy" class="col-lg-3 control label">Year of study</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="inputYearOfStudy" placeholder="year of study">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="inputAbout" class="col-lg-3 control label">About</label>
+           <div class="col-lg-6">
+             <textarea type="text" name="name" class="form-control" id="inputAbout" placeholder="About yourself">
+               </textarea>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="inputPhone" class="col-lg-3 control label">Phone</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="inputPhone" placeholder="Your phone">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="urlPic" class="col-lg-3 control label">Picture link</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="urlPic" placeholder="Must be available online">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="urlGit" class="col-lg-3 control label">Git link</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="urlGit" placeholder="Link to your git profile">
+           </div>
+         </div><div class="form-group">
+           <label for="urlLinkedin" class="col-lg-3 control label">LinkedIn link</label>
+           <div class="col-lg-6">
+             <input type="text" name="name" class="form-control" id="urlLinkedin" placeholder="Link to your LInkedIn">
+           </div>
+         </div>
+        
+
+
+        <div class="form-group">
+
+         <div class="col-lg-10 col-lg-offset-7">
+           <button type="submit" name="login" class="btn btn-warning">Save</button>
+         </div>
+       </div>
+
+
+     </form>
+   </div>
+ </div>
+
+
+
+
+ <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center " style="background-color: #EC971F !important">
+  <p style="margin-top: 10px">Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
+  <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>
+  <i class="fa fa-snapchat w3-hover-text-yellow w3-large"></i>
+  <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>
+  <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>
+  <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">Tami&Baske</a></p>
+</footer>
+
+</body>
+</html>
