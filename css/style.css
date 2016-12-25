@@ -5,3 +5,15 @@ body{
 .label-padding {
     padding:5px;
 }
+
+body {
+    background: url(./img/back.png) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+    }
+
+hr {
+    border-color: lightgrey;
+}

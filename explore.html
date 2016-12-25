@@ -23,7 +23,8 @@
     <body class="w3-light-grey">
 
         <!-- Page Container -->
-        <div class="w3-content w3-margin-top" style="max-width:1400px; margin-left:50px; margin-right:50px">
+        <div class="container">
+        <div class="w3-content w3-margin-top" style="max-width:1400px">
             <div id = "meni" style="height:100px;">
                 <div class="navbar navbar-default navbar-fixed-top" >
                     <div class="container">
@@ -75,9 +76,9 @@
 
                     <div class="w3-white w3-text-grey w3-card-4">
                         <div class="w3-display-container">
-                            <div class="w3-container" style="margin-top: 30px">
+                            <div class="w3-container" style="margin-top: 10px">
                                 <div id="pretraga">
-                                    <form class="navbar-form navbar-left" role="search" style="width:100%; margin-top:30px">
+                                    <form class="navbar-form navbar-left" role="search" method="get" style="width:100%; margin-top:30px">
                                         <div class="form-group" style="width:100%">
                                             <input type="text" class="form-control" placeholder="Search" style="width:80%">
                                             <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>                                        
@@ -87,7 +88,7 @@
                                         <p>Status at FONIS</p>
                                         <div class="form-check">
                                             <label class="form-check-label label-padding">
-                                                <input class="form-check-input" type="radio" name="status" id="active" value="active" checked>Active
+                                                <input class="form-check-input" type="radio" name="status" id="active" value="active" >Active
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -175,7 +176,71 @@
                 <div class="w3-twothird">
 
                     <div class="container" style="width:100%">
-                        //
+
+                        <div id="search-results" style="margin-top:45px">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="glyphicon glyphicon-search  w3-text-teal"></i> Search results</h2>
+                            <hr>
+                            <a href="#"><div class="single-search-result" >
+                                <div class="row" style="margin-left:10px">
+                                    <div class="col-md-3">
+                                        <div class="w3-display-container .img-responsive">
+                                            <img class="img-circle" src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/14484891_1074886355921788_4757817127298621273_n.jpg?oh=229b391f01a1b4c71e51af78d3b9aa95&oe=58FC17D5" style="width:90%" alt="Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="w3-container">
+                                            <h5 class="w3-opacity" id="user-naem"><b><i>Marko Kostadinovic</i></b></h5>
+                                            
+                                            <span class="w3-tag w3-teal w3-round">Python</span> <span class="w3-tag w3-teal w3-round">Django</span> <span class="w3-tag w3-teal w3-round">C</span>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon-calendar w3-margin-right  w3-text-teal"></i><b>Member since 2015</b></h6>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon glyphicon-star w3-margin-right w3-large w3-text-teal"></i><b>560 XP</b></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div></a>
+                            <hr>
+                            
+                            <a href="#"><div class="single-search-result" >
+                                <div class="row" style="margin-left:10px">
+                                    <div class="col-md-3">
+                                        <div class="w3-display-container .img-responsive">
+                                            <img class="img-circle" src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/13315671_10209702022694217_918725751386016536_n.jpg?oh=9cac9bd6e1d1e2287d096639d7316ba8&oe=59246DF6" style="width:90%" alt="Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="w3-container">
+                                            <h5 class="w3-opacity" id="user-naem"><b><i>Ana Basaric</i></b></h5>
+                                            
+                                            <span class="w3-tag w3-teal w3-round">Adobe Photoshop</span> <span class="w3-tag w3-teal w3-round">Adobe Illustrator</span> <span class="w3-tag w3-teal w3-round">HTML/CSS</span>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon-calendar w3-margin-right  w3-text-teal"></i><b>Member since 2015</b></h6>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon glyphicon-star w3-margin-right w3-large w3-text-teal"></i><b>560 XP</b></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div></a>
+                            <hr>
+                            
+                            <a href="#"><div class="single-search-result" >
+                                <div class="row" style="margin-left:10px">
+                                    <div class="col-md-3">
+                                        <div class="w3-display-container .img-responsive">
+                                            <img class="img-circle" src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/14492423_10209475435755093_4849832108140031877_n.jpg?oh=5d132f8ae1af5f50dd2e148a3ab83b88&oe=58F6C1BF" style="width:90%" alt="Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="w3-container">
+                                            <h5 class="w3-opacity" id="user-naem"><b><i>Tamara Naumovic</i></b></h5>
+                                            
+                                            <span class="w3-tag w3-teal w3-round">JavaScript</span> <span class="w3-tag w3-teal w3-round">HTML/CSS</span> <span class="w3-tag w3-teal w3-round">Java</span>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon-calendar w3-margin-right  w3-text-teal"></i><b>Member since 2015</b></h6>
+                                            <h6 class="w3-opacity" id="project-name"><i class="glyphicon glyphicon glyphicon-star w3-margin-right w3-large w3-text-teal"></i><b>560 XP</b></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div></a>
+                            <hr>
+
+                        </div>
                     </div>
 
                     <!-- End Right Column -->
@@ -185,6 +250,7 @@
             </div>
 
             <!-- End Page Container -->
+            </div>
         </div>
 
         <footer class="w3-container w3-teal w3-center w3-margin-top">
