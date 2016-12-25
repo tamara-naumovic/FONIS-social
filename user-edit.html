@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-1.11.2.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/style.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<script>
+    $( function() {
+      $( "#inputBirthday" ).datepicker();
+    } );
+  </script>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="container">
+<div class="w3-content w3-margin-top" style="max-width:1400px">
+  <div id = "meni" style="height:100px;">
+		<div class="navbar navbar-default navbar-fixed-top" >
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" ><img class="logo" src=""/></a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav" style="padding:1.5% 2% 0 0;">
+						<li >
+							<a  href="" id="home">Home</a>
+						</li>
+						<li>
+							<a href="explore">Explore</a>
+						</li>
+
+						<li >
+							<a href="" id="user-profile">Profile</a>
+						</li>
+						
+					</ul>
+					<ul class="nav navbar-nav" style="padding:1.5% 2% 0 0; float:right;">
+						
+						<li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">View</a></li>
+                            <li><a href="#">Edit</a></li>
+                            
+                          </ul>
+                        </li>
+
+						<li >
+							<a href="" id="user-profile">LogOut</a>
+						</li>
+						
+					</ul>
+					
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">
+							<img src=""/>
+						</a></li>
+						<style type="text/css">
+							div.image {
+								max-width:            24px;
+								max-height:           24px;
+							}
+						</style>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/14484891_1074886355921788_4757817127298621273_n.jpg?oh=229b391f01a1b4c71e51af78d3b9aa95&oe=58FC17D5" style="width:100%" alt="Avatar">
+        </div>
+        <div class="w3-container" style="margin-top: 30px">
+         <div id="bio">
+             <p class="w3-large" id="user-name-surname"><b><i class="glyphicon glyphicon-user w3-margin-right w3-large w3-text-teal"></i>Marko Konstantinovic</b></p>
+          <p ><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+          <p class="w3-large" id="user-bday"><i class="glyphicon glyphicon-calendar w3-margin-right w3-large w3-text-teal"></i>10.10.1910.</p>
+          <p id="user-maail"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+          <p id="user-phone"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <p id="user-active"><i class="glyphicon glyphicon-ok w3-margin-right w3-large w3-text-teal"></i>ACTIVE</p>
+          <p id="user-year"><i class="glyphicon glyphicon-calendar w3-margin-right w3-large w3-text-teal"></i>3rd year of college</p>
+          <p class="w3-large" id="user-xp"><i class="glyphicon glyphicon glyphicon-star w3-margin-right w3-large w3-text-teal"></i>520 XP</p>
+          <button type="submit" name="login" class="btn btn-dafault" data-toggle="modal" data-target = "#myModal" id="myBtn">Edit</button>
+          <!--Modal-->
+                  <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                          <!--Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header" id="edit-profile-header"> 
+                                  <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                                  <h4 class="modal-title">Edit profile</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <form class="form-horizontal" id="edit-profile" method="post" action="">
+                                      <div class="form-group">
+                                       <label for="inputBirthday">Birthday</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="inputBirthday" placeholder="mm/dd/yyyy">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputPassword" >Active status</label>
+                                       <div class="col-lg-6 radijo" >
+                                         <input class="form-check-input " type="radio" name="status" id="active" value="active" checked>Active
+                                        <input class="form-check-input " type="radio" name="status" id="alumni" value="alumni">Alumni
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputYearOfStudy">Year of study</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="inputYearOfStudy" placeholder="year of study">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputAbout" >About</label>
+                                       <div class="col-lg-6">
+                                         <textarea type="text" name="name" class="form-control" id="inputAbout" placeholder="About yourself">
+                                           </textarea>
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputPhone" >Phone</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="inputPhone" placeholder="Your phone">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="urlPic" >Picture link</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="urlPic" placeholder="Must be available online">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="urlGit" >Git link</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="urlGit" placeholder="Link to your git profile">
+                                       </div>
+                                     </div>
+                                      <div class="form-group">
+                                       <label for="urlLinkedin">LinkedIn link</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="urlLinkedin" placeholder="Link to your LInkedIn">
+                                       </div>
+                                      </div>
+                                      
+                                      
+                                      <div class="modal-footer" id="edit-form-confirm">
+                                        <input name="edit" type="submit" class="btn btn-default"
+                                            value='Save edits'/>
+                                        </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                   
+               
+          
+         </div>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+         
+         <div class="single-techa">
+          <p>JavaScript</p>
+          <div class="w3-progress-container w3-round-xlarge ">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">advanced</div>
+            </div>
+          </div>
+          <p>Opis tehnologije</p>
+        </div>
+          
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Zelim da naucim</b></p>
+          <p>English</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:55%"></div>
+          </div>
+          <p>German</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="container" style="width:100%">
+          <div id="tabs">
+                 <ul class="nav nav-tabs" role="tablist" >
+                    <li  role="presentation" class="active"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">FONIS Projects</a></li>
+                    <li role="presentation" ><a href="#work-history" role="tab" aria-controls="work-history" data-toggle="tab">Work History</a></li>
+                    
+                 </ul>
+                 <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="projects" style="margin-top:20px;">
+                      <button type="submit" name="login" class="btn btn-dafault col-lg-offset-10" data-toggle="modal" data-target = "#addNewProjectModal" id="addNewWork">Add new</button>
+                   <!--Modal add new-->
+                        <div class="modal fade" id="addNewProjectModal" role="dialog">
+                      <div class="modal-dialog">
+                          <!--Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header" id="add-project-header"> 
+                                  <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                                  <h4 class="modal-title">Add new project/position</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <form class="form-horizontal" id="add-work" method="post" action="">
+                                      <div class="form-group">
+                                       <label for="add-position">Position</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-positon" placeholder="Position">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-project-name">Project name</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-project-name" placeholder="Project name">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-dateStart">Date start</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-dateStart" placeholder="mm/dd/yyyy">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-dateFInish">Date finish</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-dateFinish" placeholder="mm/dd/yyyy">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputAbout" >About position</label>
+                                       <div class="col-lg-6">
+                                         <textarea type="text" name="name" class="form-control" id="inputAbout" placeholder="About position">
+                                           </textarea>
+                                       </div>
+                                     </div>
+                                     
+                                      
+                                      
+                                      <div class="modal-footer" id="add-work-confirm">
+                                        <input name="add-position" type="submit" class="btn btn-default"
+                                            value='Submit'/>
+                                        </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                         <div class="single-project" >
+                          <div class="w3-container">
+                              <h5 class="w3-opacity" id="pozicija-name"><b><i>Corporate Relations</i></b></h5>
+                              <h6 class="w3-opacity" id="project-name"><b>Start Imagine</b></h6>
+
+                              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                              <p>u slucaju da nemam zavrsi datum to jest da jos uvek radi ovde</p>
+                              <hr>
+                        </div>
+                      </div>
+                      <div class="single-project">
+                          <div class="w3-container">
+                              <h5 class="w3-opacity" id="pozicija-name"><b><i>Public Relations</i></b></h5>
+                              <h6 class="w3-opacity" id="project-name"><b>Start Imagine</b></h6>
+                              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                              <p>u slucaju da imamo zavrsi datum </p>
+                              <hr>
+                            </div>
+                      </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="work-history" style="margin-top:20px;">
+                   <button type="submit" name="login" class="btn btn-dafault col-lg-offset-10" data-toggle="modal" data-target = "#addNewWorkModal" id="addNewWork">Add new</button>
+                   <!--Modal add new-->
+                        <div class="modal fade" id="addNewWorkModal" role="dialog">
+                      <div class="modal-dialog">
+                          <!--Modal content-->
+                          <div class="modal-content">
+                              <div class="modal-header" id="add-work-header"> 
+                                  <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                                  <h4 class="modal-title">Edit profile</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <form class="form-horizontal" id="add-work" method="post" action="">
+                                      <div class="form-group">
+                                       <label for="add-company-name">Company name</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-company-name" placeholder="Company name">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-company-position">Position</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-company-position" placeholder="Posiiton">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-workStart">Date start</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-workStart" placeholder="mm/dd/yyyy">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="add-workFinish">Date finish</label>
+                                       <div class="col-lg-6">
+                                         <input type="text" name="name" class="form-control" id="add-workFinish" placeholder="mm/dd/yyyy">
+                                       </div>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="inputAbout" >About position</label>
+                                       <div class="col-lg-6">
+                                         <textarea type="text" name="name" class="form-control" id="inputAbout" placeholder="About position">
+                                           </textarea>
+                                       </div>
+                                     </div>
+                                     
+                                      
+                                      
+                                      <div class="modal-footer" id="add-work-confirm">
+                                        <input name="add-wrok" type="submit" class="btn btn-default"
+                                            value='Submit'/>
+                                        </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                    <div class="single-work" >
+                          <div class="w3-container">
+                              <h5 class="w3-opacity" id="work-position"><b><i>Java Dev</i></b></h5>
+                              <h6 class="w3-opacity" id="work-firm-name"><b>Saga</b></h6>
+
+                              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                              <p>u slucaju da nemam zavrsi datum to jest da jos uvek radi ovde</p>
+                              <hr>
+                        </div>
+                      </div>
+                      <div class="single-work">
+                          <div class="w3-container">
+                              <h5 class="w3-opacity" id="work-position"><b><i>Junior JAvaScript Dev</i></b></h5>
+                              <h6 class="w3-opacity" id="work-firm-name"><b>SBG</b></h6>
+                              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                              <p>u slucaju da imamo zavrsi datum </p>
+                              <hr>
+                            </div>
+                      </div>
+                      <div class="single-work">
+                          <div class="w3-container">
+                              <h5 class="w3-opacity" id="work-position"><b><i>Junior JAvaScript Dev</i></b></h5>
+                              <h6 class="w3-opacity" id="work-firm-name"><b>SBG</b></h6>
+                              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+                              <p>u slucaju da imamo zavrsi datum </p>
+                              <hr>
+                            </div>
+                      </div>
+                      
+                  </div>
+                  
+                  
+                </div>
+                 
+              </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+    </div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p style="margin-top: 10px">Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
+  <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>
+  <i class="fa fa-snapchat w3-hover-text-yellow w3-large"></i>
+  <i class="fa fa-pinterest-p w3-hover-text-red w3-large"></i>
+  <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>
+  <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
+  <p style="margin-top:7px">Powered by Tami&Baske</p>
+</footer>
+
+</body>
+</html>
