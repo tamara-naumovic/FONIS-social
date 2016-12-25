@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    html,body {
+    body {
     background: url(img/back.png) no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -29,10 +29,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     height: 100px;
     bottom: 0;
     width: 100%;
+    
     }
     #wrap-login{
         width: 80%;
-        margin-top: 10%;
+        margin-top: 15%;
         margin-left: 30%;
     }
     .form-group label{
@@ -51,19 +52,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   
    <div class="col-lg-6">
        <div class="">
-           <form class="form-inline" id="loginForm" method="post" action="">
-               <h2>Login</h2>
+           <form class="form-horizontal" id="loginForm" method="post" action="">
+               
                <br>
                <div class="form-group">
-                   <label for="inputName" class="col-lg-2 control label">Username</label>
-                   <div class="col-lg-10">
+                   <label for="inputUserName" class="col-lg-3 control label">Username</label>
+                   <div class="col-lg-6">
                        <input type="text" name="name" class="form-control" id="inputUserName" placeholder="Your username">
                    </div>
                </div>
                <div class="form-group">
-                   <label for="inputPassword" class="col-lg-2 control label">Password</label>
-                   <div class="col-lg-10">
+                   <label for="inputPassword" class="col-lg-3 control label">Password</label>
+                   <div class="col-lg-6">
                        <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Your password">
+                   </div>
+               </div>
+               
+               <div class="form-group">
+                   
+                   <div class="col-lg-10 col-lg-offset-7">
+                       <button type="submit" name="login" class="btn btn-warning">Login</button>
                    </div>
                </div>
                
@@ -78,7 +86,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center ">
+<footer class="w3-container w3-teal w3-center " style="background-color: #EC971F !important">
   <p style="margin-top: 10px">Find me on social media.</p>
   <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
   <i class="fa fa-instagram w3-hover-text-purple w3-large"></i>
