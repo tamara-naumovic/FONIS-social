@@ -22,7 +22,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <body class="w3-light-grey">
 
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content w3-margin-top" style="max-width:1400px; margin-left:50px; margin-right:50px">
   <div id = "meni" style="height:100px;">
 		<div class="navbar navbar-default navbar-fixed-top" >
 			<div class="container">
@@ -136,19 +136,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="container">
+      <div class="container" style="width:100%">
           <div id="tabs">
                  <ul class="nav nav-tabs" role="tablist" >
-                    <li  role="presentation" class="active"><a href="#knowledge" aria-controls="knoledge" role="tab" data-toggle="tab">FONIS Projects</a></li>
-                    <li role="presentation" ><a href="#projects" role="tab" aria-controls="projects" data-toggle="tab">Work History</a></li>
+                    <li  role="presentation" class="active"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">FONIS Projects</a></li>
+                    <li role="presentation" ><a href="#work-history" role="tab" aria-controls="work-history" data-toggle="tab">Work History</a></li>
                     
                  </ul>
                  <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="knowledge">
-                      
-       prvi tab
+                  <div role="tabpanel" class="tab-pane fade in active" id="projects">
+                      <div id="single-project" >
+                          <div class="w3-container">
+                          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+                          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                          <hr>
+                        </div>
+                      </div>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="projects">
+                  <div role="tabpanel" class="tab-pane fade" id="work-history">
                     drugi tab
 
                   </div>
